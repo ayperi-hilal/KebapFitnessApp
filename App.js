@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Welcome from './src/pages/Welcome';
 import MemberSing from './src/pages/MemberSing';
-
+import MemberResult from './src/pages/MemberResult';
 
 
 const Stack = createNativeStackNavigator();
@@ -19,6 +19,7 @@ function App() {
         //  options={{headerShown:false }}
          />
          <Stack.Screen name="MemberSingScreens" component={MemberSing}/>
+         <Stack.Screen name="MemberResultScreens" component={MemberResult}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
